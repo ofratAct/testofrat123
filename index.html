@@ -2,104 +2,218 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>חופשה כשרה בגיאורגיה ליד הים</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f8fb;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>חופשה כשרה בגיאורגיה</title>
 
-        header {
-            background: linear-gradient(135deg, #0077b6, #00b4d8);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        .hero {
-            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-        }
+body{
+    background:#f5f7fa;
+    color:#333;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 30px;
-        }
+header{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
 
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+header h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
 
-        h2 {
-            color: #0077b6;
-        }
+header p{
+    font-size:1.3rem;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #023e8a;
-            color: white;
-        }
-    </style>
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#0a5a8f;
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card-content h3{
+    color:#0a5a8f;
+    margin-bottom:10px;
+}
+
+.hotel{
+    background:#0a5a8f;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hotel img{
+    width:90%;
+    max-width:900px;
+    border-radius:20px;
+    margin-top:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#ffc107;
+    color:#222;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+footer{
+    background:#052d48;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>חופשה כשרה בגיאורגיה ליד חוף הים</h1>
-    <p>נופים מרהיבים, אווירה רגועה ומלון כשר ברמה גבוהה</p>
+    <div>
+        <h1>חופשה כשרה בגיאורגיה</h1>
+        <p>מלון יוקרתי על חוף הים • אטרקציות • נופים עוצרי נשימה</p>
+        <a href="#hotel" class="btn">לפרטים נוספים</a>
+    </div>
 </header>
 
-<div class="hero"></div>
+<section class="section">
+    <h2 class="section-title">נופים ואתרים בגיאורגיה</h2>
 
-<div class="container">
+    <div class="gallery">
 
-    <div class="card">
-        <h2>🌊 חוף הים השחור</h2>
-        <p>
-            תיהנו מחופים יפים, מים צלולים וטיילת מרשימה לאורך קו החוף.
-            האזור מציע שילוב מושלם בין טבע, ים ונופש איכותי.
-        </p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="">
+            <div class="card-content">
+                <h3>הרי הקווקז</h3>
+                <p>פסגות מושלגות, אוויר צלול ונוף מרהיב לכל המשפחה.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963" alt="">
+            <div class="card-content">
+                <h3>טביליסי העתיקה</h3>
+                <p>רחובות ציוריים, מסעדות ומרכזי קניות.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+            <div class="card-content">
+                <h3>אגמים ויערות</h3>
+                <p>מסלולי טבע מרהיבים וצילומים בלתי נשכחים.</p>
+            </div>
+        </div>
+
     </div>
+</section>
 
-    <div class="card">
-        <h2>🏔️ נופי גיאורגיה</h2>
-        <p>
-            במרחק קצר מהחוף תוכלו לצפות בהרים ירוקים, יערות קסומים
-            ונחלים ציוריים המאפיינים את גיאורגיה.
-        </p>
+<section class="section">
+    <h2 class="section-title">אטרקציות מובילות</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60" alt="">
+            <div class="card-content">
+                <h3>טיולי ג'יפים</h3>
+                <p>מסלולים מיוחדים בהרים ובכפרים הציוריים.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+            <div class="card-content">
+                <h3>חופי בטומי</h3>
+                <p>רצועת חוף יפהפייה לאורך הים השחור.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b" alt="">
+            <div class="card-content">
+                <h3>רכבלים ותצפיות</h3>
+                <p>נופים פנורמיים של ההרים והים.</p>
+            </div>
+        </div>
+
     </div>
+</section>
 
-    <div class="card">
-        <h2>🍽️ מלון כשר</h2>
-        <p>
-            המלון מציע מטבח כשר, ארוחות עשירות, בית כנסת,
-            ושירות המותאם במיוחד לשומרי מסורת.
-        </p>
-    </div>
+<section id="hotel" class="hotel">
+    <h2 style="font-size:2.5rem;">המלון הכשר על חוף הים</h2>
 
-    <div class="card">
-        <h2>✨ חוויית נופש מושלמת</h2>
-        <p>
-            שילוב נדיר של חוף ים, נופים עוצרי נשימה, אירוח כשר
-            ואווירה רגועה לחופשה בלתי נשכחת.
-        </p>
-    </div>
+    <p style="margin-top:20px;font-size:1.2rem;">
+        מלון מפואר עם מסעדה כשרה, בית כנסת, בריכה,
+        חדרי יוקרה ונוף ישיר לים השחור.
+    </p>
 
-</div>
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+         alt="מלון יוקרתי">
+
+    <br>
+    <a href="#" class="btn">הזמן עכשיו</a>
+</section>
 
 <footer>
-    © 2026 חופשה כשרה בגיאורגיה
+    © 2026 חופשה כשרה בגיאורגיה | כל הזכויות שמורות
 </footer>
 
 </body>
